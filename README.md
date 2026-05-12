@@ -94,6 +94,12 @@ node app.js --filter=ry --count
 npm run test
 ```
 
+### Coverage
+
+```shell
+npm run test:coverage
+```
+
 ## Requirements
 
 - No external libraries except the testing library (Jest)
