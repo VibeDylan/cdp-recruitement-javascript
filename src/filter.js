@@ -17,7 +17,7 @@ function filterData(data, pattern) {
         ...country,
         people: country.people.map(person => ({
             ...person,
-            animals: person.animals.filter(animal => animal.name.toLowerCase().includes(pattern.toLowerCase()))
+            animals: person.animals.filter(animal => animal.name.includes(pattern))
         })).filter(person => person.animals.length > 0)
     }))
     .filter(country => country.people.length > 0);
